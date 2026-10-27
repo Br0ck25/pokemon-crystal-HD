@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+.wrangler/
+
+# Temporary / Backup files
+*.bak
+*.testbak
+
+# Dropzone processed archives
+hd_dropzone/_processed/
+!hd_dropzone/_processed/.gitkeep

@@ -1,0 +1,9 @@
+{
+  "name": "base_rom HD",
+  "short_name": "base_rom HD",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#080b10",
+  "theme_color": "#080b10"
+}
