@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 80" width="192" height="320">
+  <defs>
+    <linearGradient id="left" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8f4ff"/><stop offset="1" stop-color="#8fb4e0"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3a5f9e"/><stop offset="1" stop-color="#14264f"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9d6f5"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4c78b8"/><stop offset="1" stop-color="#1b3266"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#cfd8e6"/><stop offset="0.5" stop-color="#7d8aa3"/><stop offset="1" stop-color="#2b3350"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#0b1530" stroke-width="0.9" stroke-linejoin="round">
+    <!-- base plate -->
+    <path d="M2 67 Q24 62 46 67 L44 71 Q24 75 4 71 Z" fill="url(#base)"/>
+    <path d="M10 64 Q24 61 38 64 L36 67 Q24 69 12 67 Z" fill="#a9b6cc"/>
+    <!-- outer faces -->
+    <path d="M24 1 L6 9 L3 50 L24 64 Z" fill="url(#left)"/>
+    <path d="M24 1 L42 9 L45 50 L24 64 Z" fill="url(#right)"/>
+    <!-- top and bottom bevel facets around the opening -->
+    <path d="M24 1 L42 9 L31 17 L17 17 L6 9 Z" fill="url(#top)"/>
+    <path d="M3 50 L17 42 L24 52 L24 64 Z" fill="#5f88c4"/>
+    <path d="M45 50 L31 42 L24 52 L24 64 Z" fill="url(#bottom)"/>
+    <!-- opening -->
+    <path d="M24 14 L31 20 L31 43 L24 53 L17 43 L17 20 Z" fill="#f4faff"/>
+    <path d="M24 14 L31 20 L31 43 L24 53 Z" fill="#9fbbe0" stroke="none"/>
+  </g>
+  <path d="M8 12 L8 46" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+</svg>
