@@ -12,7 +12,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\James\.gemini\anti
 
 echo.
 echo Rebuilding game ROM and web assets...
-"C:\Users\James\Downloads\pokecrystal-master\pokecrystal-master\GBC-Cloudflare-Converter.exe" --rebuild "%~dp0"
+set "PROJ_DIR=%~dp0"
+if "%PROJ_DIR:~-1%"=="\" set "PROJ_DIR=%PROJ_DIR:~0,-1%"
+"C:\Users\James\Downloads\pokecrystal-master\pokecrystal-master\GBC-Cloudflare-Converter.exe" --rebuild "%PROJ_DIR%"
 
 echo.
 echo ======================================================================
